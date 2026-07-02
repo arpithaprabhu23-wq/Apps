@@ -1,0 +1,110 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Luxury) mixed with Cosmic/Space",
+  "description": "A premium, cosmic-themed chess learning website named AstraAPP. Features deep navy/blue starfields, glowing galaxies, and metallic gold/silver chess pieces. Merges functional app components with an immersive marketing landing page.",
+  "colors": {
+    "background": {
+      "base": "#050814",
+      "surface": "#0B1120",
+      "surface_glass": "rgba(11, 17, 32, 0.6)",
+      "surface_highlight": "#151F38"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "secondary": "#94A3B8",
+      "accent": "#FFD700"
+    },
+    "brand": {
+      "primary": "#00E5FF",
+      "primary_hover": "#00B3CC",
+      "secondary": "#D4AF37",
+      "gold_metallic": "#FFD700",
+      "silver_metallic": "#C0C0C0"
+    },
+    "chessboard": {
+      "light_square": "#2D3B55",
+      "dark_square": "#0B1120",
+      "highlight": "rgba(0, 229, 255, 0.4)",
+      "gold_pieces": "#FFD700"
+    },
+    "borders": {
+      "subtle": "rgba(255, 255, 255, 0.1)",
+      "glow": "rgba(0, 229, 255, 0.3)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Rajdhani', sans-serif",
+      "body": "'Outfit', sans-serif",
+      "mono": "'Space Mono', monospace"
+    },
+    "scales": {
+      "h1": "text-5xl sm:text-6xl tracking-tight font-bold",
+      "h2": "text-3xl sm:text-4xl tracking-tight font-semibold",
+      "h3": "text-2xl sm:text-3xl font-medium",
+      "h4": "text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm tracking-wide",
+      "overline": "text-xs tracking-[0.2em] uppercase"
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "Generous (p-8, p-12) for marketing, Compact (p-4, p-6) for dashboards/play screens.",
+    "container_max_width": "max-w-7xl mx-auto",
+    "grid_modes": {
+      "marketing": "grid-cols-1 md:grid-cols-12 gap-8 (Bento logic)",
+      "dashboard": "grid-cols-1 md:grid-cols-4 gap-6 (Control Room logic)"
+    }
+  },
+  "surface_strategies": {
+    "header": "Crystal Glass - backdrop-blur-xl bg-[#0B1120]/60 border-b border-white/10",
+    "cards": "Glassmorphism with 1px delicate inner stroke (border-white/10), backdrop-blur-md, soft ambient drop shadow",
+    "chessboard_container": "The 'Tracing Beam' - 1px glowing cyan/blue border that frames the board to feel technical and alive",
+    "buttons": "Flat dark background with metallic gold or electric blue text, subtle 1px border, hover adds glow shadow"
+  },
+  "motion_and_interactions": {
+    "hover": "Slight lift (-translate-y-1) + subtle glow drop-shadow",
+    "click": "Scale down slightly (scale-95)",
+    "page_transition": "Fade in with upward drift",
+    "board_moves": "Smooth snapping animations for chess pieces"
+  },
+  "components": {
+    "navigation": "Sticky glass header with Logo, Play, Puzzles, Lessons, Coach, and a Gold 'Play Now' CTA.",
+    "hero": "Full viewport height, deep galaxy background image with a dark overlay (bg-black/40). Large glowing typography, floating gold chess piece SVGs.",
+    "chessboard": "Custom SVG/HTML grid. Light squares (#2D3B55), dark squares (#0B1120). Pieces should use Unicode or custom SVGs styled in metallic gold (#FFD700) and silver (#C0C0C0).",
+    "lesson_cards": "Bento-style glass cards, each with an astronomical icon and deep blue gradient overlay.",
+    "ai_coach": "Chat interface using Shadcn components, styled as a 'Control Room' terminal. Cosmic background blur, text in 'Outfit', AI messages have subtle cyan borders."
+  },
+  "media": {
+    "image_urls": [
+      {
+        "url": "https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg",
+        "category": "hero_background",
+        "description": "Deep starfield and milky way galaxy. Use behind the hero section with a dark overlay to make text pop."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1464802686167-b939a6910659",
+        "category": "lesson_background",
+        "description": "Blue and purple galaxy texture. Good for subtle card backgrounds or AI Coach panel backgrounds."
+      },
+      {
+        "url": "https://images.pexels.com/photos/112855/pexels-photo-112855.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "category": "marketing_image",
+        "description": "Moody chessboard scene for the 'Learn Strategy' or 'Play AI' sections on the marketing page."
+      }
+    ],
+    "icons": "lucide-react"
+  },
+  "accessibility": {
+    "contrast": "Ensure text against dark backgrounds meets APCA standards. Use text-shadow for text over galaxy images.",
+    "testing": "All interactive elements must have data-testid attributes."
+  },
+  "instructions_to_main_agent": [
+    "Use 'Rajdhani' for headings and 'Outfit' for body fonts. Link them via Google Fonts.",
+    "Build a custom responsive chessboard component using standard HTML/Tailwind, ensuring squares have the specific cosmic hex colors provided.",
+    "For chess pieces, use standard Unicode chess characters (♚, ♛, ♜, ♝, ♞, ♟) but style them with text-shadow and metallic gold/silver colors.",
+    "Implement the 'AstraAPP' brand identity heavily in the hero section.",
+    "Ensure all Shadcn components (buttons, dialogs, inputs) are customized to fit the dark cosmic theme, removing any default white/gray Vercel-like styling.",
+    "Include a functional layout structure navigating between Home, Play, Puzzles, Lessons, and Coach."
+  ]
+}
