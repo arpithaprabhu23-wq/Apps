@@ -1,0 +1,12 @@
+[build]
+  command = "yarn build"
+  publish = "build"
+
+[dev]
+  command = "yarn start"
+  port = 3000
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
